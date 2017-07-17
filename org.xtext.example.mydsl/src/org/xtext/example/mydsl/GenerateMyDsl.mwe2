@@ -42,6 +42,7 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "org.xtext.example.mydsl.MyDslB"
+			referencedResource="${rootPath}/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
 			//referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
 			fileExtensions = "mydslb"
 
@@ -54,7 +55,7 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "org.xtext.example.mydsl.MyDslC"
-			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
+			referencedResource="${rootPath}/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
 			fileExtensions = "mydslc"
 
 			serializer = {
