@@ -42,7 +42,7 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "org.xtext.example.mydsl.MyDslB"
-			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
+			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslB.xtext"
 			fileExtensions = "mydslb"
 
 			serializer = {
@@ -53,7 +53,7 @@ Workflow {
 			}
 		}
 		language = StandardLanguage {
-			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
+			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslC.xtext"
 			name = "org.xtext.example.mydsl.MyDslC"
 			fileExtensions = "mydslc"
 
