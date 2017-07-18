@@ -14,6 +14,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<modules>
+		<module>duly</module>
 		<module>org.xtext.example.mydsl</module>
 		<module>org.xtext.example.mydsl.ide</module>
 		<module>org.xtext.example.mydsl.ui</module>
