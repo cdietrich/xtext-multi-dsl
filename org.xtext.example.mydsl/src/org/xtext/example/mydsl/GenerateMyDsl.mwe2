@@ -30,6 +30,7 @@ Workflow {
 			}
 		}
 		language = StandardLanguage {
+			referencedResource="platform:/resource/duly/model/duly.genmodel"
 			name = "org.xtext.example.mydsl.MyDslA"
 			fileExtensions = "mydsla"
 
@@ -41,8 +42,9 @@ Workflow {
 			}
 		}
 		language = StandardLanguage {
+			referencedResource="platform:/resource/duly/model/duly.genmodel"
 			name = "org.xtext.example.mydsl.MyDslB"
-			referencedResource="${rootPath}/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
+			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
 			//referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
 			fileExtensions = "mydslb"
 
@@ -54,8 +56,9 @@ Workflow {
 			}
 		}
 		language = StandardLanguage {
+			referencedResource="platform:/resource/duly/model/duly.genmodel"
 			name = "org.xtext.example.mydsl.MyDslC"
-			referencedResource="${rootPath}/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
+			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
 			fileExtensions = "mydslc"
 
 			serializer = {

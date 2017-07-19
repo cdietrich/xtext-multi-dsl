@@ -3,9 +3,10 @@ grammar org.xtext.example.mydsl.MyDslB with org.xtext.example.mydsl.MyDslA
 generate myDslB "http://www.xtext.org/example/mydsl/MyDslB"
 
 import "http://www.xtext.org/example/mydsl/MyDslA" as a
+import "http://www.itemis.de/duly" as duly
 
 ModelB:
 	greetings+=GreetingB*;
 	
 GreetingB:
-	'Hello' name=ID ('from' from=[a::Greeting])?'!';
+	'Hello' name=ID ('from' from=[a::Greeting])? ('from2' from2=[duly::Demo])? '!';

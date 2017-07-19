@@ -2,8 +2,10 @@ grammar org.xtext.example.mydsl.MyDslA with org.eclipse.xtext.common.Terminals
 
 generate myDslA "http://www.xtext.org/example/mydsl/MyDslA"
 
+import "http://www.itemis.de/duly" as duly
+
 Model:
 	greetings+=Greeting*;
 	
 Greeting:
-	'Hello' name=ID '!';
+	'Hello' name=ID ('from' from=[duly::Demo])? '!';

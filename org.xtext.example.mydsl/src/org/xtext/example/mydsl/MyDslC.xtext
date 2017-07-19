@@ -3,9 +3,10 @@ grammar org.xtext.example.mydsl.MyDslC with org.eclipse.xtext.common.Terminals
 generate myDslC "http://www.xtext.org/example/mydsl/MyDslC"
 
 import "http://www.xtext.org/example/mydsl/MyDslA" as a
+import "http://www.itemis.de/duly" as duly
 
 ModelC:
 	greetings+=GreetingC*;
 	
 GreetingC:
-	'Hello' name=ID ('from' from=[a::Greeting])? '!';
+	'Hello' name=ID ('from' from=[a::Greeting])? ('from2' from2=[duly::Demo])? '!';
