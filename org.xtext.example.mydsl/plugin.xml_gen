@@ -13,4 +13,10 @@
 			class = "org.xtext.example.mydsl.myDslB.MyDslBPackage"
 			genModel = "model/generated/MyDslB.genmodel" />
 	</extension>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package 
+			uri = "http://www.xtext.org/example/mydsl/MyDslC"
+			class = "org.xtext.example.mydsl.myDslC.MyDslCPackage"
+			genModel = "model/generated/MyDslC.genmodel" />
+	</extension>
 </plugin>
