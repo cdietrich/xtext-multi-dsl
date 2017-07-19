@@ -7,14 +7,16 @@ var rootPath = ".."
 
 Workflow {
 	
-	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
-		scanClassPath = true
-		registerGeneratedEPackage = "duly.DulyPackage"
-		registerGenModelFile="platform:/resource/duly/model/duly.genmodel"
-	}
+//	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+//		scanClassPath = true
+//		registerGeneratedEPackage = "duly.DulyPackage"
+//		registerGenModelFile="platform:/resource/duly/model/duly.genmodel"
+//	}
 	
 	component = XtextGenerator {
-		configuration = {
+		
+		configuration = duly.DulyModule {
+			
 			project = StandardProjectConfig {
 				baseName = "org.xtext.example.mydsl"
 				rootPath = rootPath
