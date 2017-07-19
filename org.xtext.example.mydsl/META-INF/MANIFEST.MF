@@ -14,7 +14,8 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.util,
  org.eclipse.xtend.lib,
  org.eclipse.emf.common,
- duly
+ duly,
+ org.eclipse.xtext.ecore;bundle-version="2.11.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.xtext.example.mydsl.parser.antlr.internal,
  org.xtext.example.mydsl.myDslA.util,
