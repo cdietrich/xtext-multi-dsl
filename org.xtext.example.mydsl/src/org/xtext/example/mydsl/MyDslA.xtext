@@ -9,3 +9,5 @@ Model:
 	
 Greeting:
 	'Hello' name=ID ('from' from=[duly::Demo])? '!';
+	
+FQN1: ID ("." ID)*;

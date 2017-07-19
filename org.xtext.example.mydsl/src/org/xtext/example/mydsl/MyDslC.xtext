@@ -1,12 +1,15 @@
-grammar org.xtext.example.mydsl.MyDslC with org.eclipse.xtext.common.Terminals
+grammar org.xtext.example.mydsl.MyDslC with org.xtext.example.mydsl.MyDslB
 
 generate myDslC "http://www.xtext.org/example/mydsl/MyDslC"
 
 import "http://www.xtext.org/example/mydsl/MyDslA" as a
+import "http://www.xtext.org/example/mydsl/MyDslB" as b
 import "http://www.itemis.de/duly" as duly
 
 ModelC:
 	greetings+=GreetingC*;
 	
 GreetingC:
-	'Hello' name=ID ('from' from=[a::Greeting])? ('from2' from2=[duly::Demo])? '!';
+	'Helloc' name=ID ('from' from=[a::Greeting])? ('from2' from2=[duly::Demo])? ('from3' from3=[b::GreetingB])?
+	x=FQN1 y=FQN2 z=GreetingB
+	'!';

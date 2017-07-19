@@ -9,4 +9,6 @@ ModelB:
 	greetings+=GreetingB*;
 	
 GreetingB:
-	'Hello' name=ID ('from' from=[a::Greeting])? ('from2' from2=[duly::Demo])? '!';
+	'Hello' name=ID ('from' from=[a::Greeting])? ('from2' from2=[duly::Demo])? x=FQN1'!';
+
+	FQN2: ID ("." ID)*;

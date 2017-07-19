@@ -7,6 +7,12 @@ var rootPath = ".."
 
 Workflow {
 	
+	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+		scanClassPath = true
+		registerGeneratedEPackage = "duly.DulyPackage"
+		registerGenModelFile="platform:/resource/duly/model/duly.genmodel"
+	}
+	
 	component = XtextGenerator {
 		configuration = {
 			project = StandardProjectConfig {
@@ -59,6 +65,7 @@ Workflow {
 			referencedResource="platform:/resource/duly/model/duly.genmodel"
 			name = "org.xtext.example.mydsl.MyDslC"
 			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslA.xtext"
+			referencedResource="platform:/resource/org.xtext.example.mydsl/src/org/xtext/example/mydsl/MyDslB.xtext"
 			fileExtensions = "mydslc"
 
 			serializer = {
